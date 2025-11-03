@@ -7,14 +7,14 @@ This app is a Tizen-compatible React (Vite) frontend implementing the Ocean Prof
 
 Development
 - Node: >=18 <20 (pinned for CI compatibility)
-- Vite: 5.x (pinned)
+- Vite: 4.5.x (compatible with Node 18 and @vitejs/plugin-react 3.x)
 
 Commands:
 - npm install
-- npm run dev  (http://localhost:3000)
+- npm start or npm run dev  (http://localhost:3000, binds on 0.0.0.0)
 - npm run build
-- npm run preview
+- npm run preview (or npm run start:preview)
 
-Note:
-- This project includes a local .npmrc and package.json overrides to ensure Vite 5 is used in Node 18 environments.
+Notes:
+- Vite dev and preview are configured to bind 0.0.0.0:3000 with strictPort to match platform preview expectations.
 - When backend is ready, replace getRecipes/getRecipeById in src/services/mockRecipes.js with API calls while preserving the interface.
