@@ -1,45 +1,17 @@
-.tv-app {
-  width: 1920px;
-  height: 1080px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #000;
-  color: #fff;
+/* Base app polish; most styling handled inline via theme to reduce CSS complexity */
+:focus {
+  outline: 2px solid rgba(37,99,235,0.6);
+  outline-offset: 2px;
 }
 
-h1 {
-  font-size: 72px;
-  margin-bottom: 60px;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
-
-.content {
-  text-align: center;
+::-webkit-scrollbar-thumb {
+  background: rgba(17,24,39,0.2);
+  border-radius: 999px;
 }
-
-button {
-  font-size: 32px;
-  padding: 20px 60px;
-  border-radius: 10px;
-  border: 3px solid #666;
-  background: #222;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-button:hover,
-button:focus {
-  border-color: #00aaff;
-  background: #00aaff;
-  color: #000;
-  transform: scale(1.1);
-  outline: none;
-}
-
-p {
-  margin-top: 30px;
-  font-size: 24px;
-  color: #888;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
